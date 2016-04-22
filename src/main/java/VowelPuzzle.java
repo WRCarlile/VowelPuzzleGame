@@ -29,7 +29,7 @@ public class VowelPuzzle {
 
   public static String vowelRemover(String userInput) {
     String newSentence = userInput.replace('e','-');
-    newSentence = newSentence.replace('t','-');
+    newSentence = newSentence.replace('a','-');
     newSentence = newSentence.replace('u','-');
     newSentence = newSentence.replace('i','-');
     newSentence = newSentence.replace('o','-');
