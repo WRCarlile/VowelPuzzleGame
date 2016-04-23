@@ -35,9 +35,8 @@ public class VowelPuzzleFluentTest extends FluentTest {
     fill("#sentence").with("hello");
     submit(".btn");
     assertThat(pageSource()).contains("h-ll-");
-    goTo("http://localhost:4567/detector");
     fill("#answer").with("hello");
     submit(".btn");
-    assertThat(pageSource()).contains("hello");
+    assertThat(pageSource()).contains("You Win!");
   }
 }
