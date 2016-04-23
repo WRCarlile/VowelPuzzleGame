@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="VowelPuzzleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-22T18:33:06" hostname="epicodus-89.local" time="0.0">
+<testsuite name="VowelPuzzleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-22T23:19:47" hostname="Williams-MacBook-Pro.local" time="0.001">
   <properties/>
   <testcase name="vowelRemover_replaceSentenceVowelsWithDash_dashForVowels" classname="VowelPuzzleTest" time="0.0"/>
+  <testcase name="compareSentences_compareTheCodedSentenceWithTheUncoded_tryAgain" classname="VowelPuzzleTest" time="0.0"/>
+  <testcase name="compareSentences_compareTheCodedSentenceWithTheUncoded_youWin" classname="VowelPuzzleTest" time="0.0"/>
   <system-out><![CDATA[Th- s-n w-ll c-m- --t t-m-rr-w
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
