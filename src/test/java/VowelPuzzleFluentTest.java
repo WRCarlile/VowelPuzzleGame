@@ -22,4 +22,22 @@ public class VowelPuzzleFluentTest extends FluentTest {
     goTo("http://localhost:4567/");
     assertThat(pageSource()).contains("Vowel Game");
   }
+  @Test
+  public void createPuzzle() {
+    goTo("http://localhost:4567/");
+    fill("#sentence").with("hello");
+    submit(".btn");
+    assertThat(pageSource()).contains("h-ll-");
+  }
+  @Test
+  public void checkPuzzle() {
+    goTo("http://localhost:4567/");
+    fill("#sentence").with("hello");
+    submit(".btn");
+    assertThat(pageSource()).contains("h-ll-");
+    goTo("http://localhost:4567/detector");
+    fill("#answer").with("hello");
+    submit(".btn");
+    assertThat(pageSource()).contains("hello");
+  }
 }
