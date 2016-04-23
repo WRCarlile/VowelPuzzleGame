@@ -30,7 +30,7 @@ public class VowelPuzzleFluentTest extends FluentTest {
     assertThat(pageSource()).contains("h-ll-");
   }
   @Test
-  public void checkPuzzle() {
+  public void checkPuzzlePass() {
     goTo("http://localhost:4567/");
     fill("#sentence").with("hello");
     submit(".btn");
@@ -38,5 +38,15 @@ public class VowelPuzzleFluentTest extends FluentTest {
     fill("#answer").with("hello");
     submit(".btn");
     assertThat(pageSource()).contains("You Win!");
+  }
+  @Test
+  public void checkPuzzleFail() {
+    goTo("http://localhost:4567/");
+    fill("#sentence").with("hello");
+    submit(".btn");
+    assertThat(pageSource()).contains("h-ll-");
+    fill("#answer").with("hell");
+    submit(".btn");
+    assertThat(pageSource()).contains("Try Again!");
   }
 }
