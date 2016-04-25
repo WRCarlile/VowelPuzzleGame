@@ -1,15 +1,16 @@
-# Project Name
-### Site Link
-##### Title
+# Vowel Game
+
+##### The vowel remover game
 
 #### By Ryan Carlile
 
-## Description
+## First enter a puzzle sentence for someone to decode, then show the person
+the puzzle. Have them enter the right sentence to win the game.
 
-## Setup
+## Run on terminal with gradle.
 
 
-## Technologies Used
+## Java, HTML, CSS, Gradle, Spark, Velocity
 
 
 
