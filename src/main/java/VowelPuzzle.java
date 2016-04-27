@@ -6,7 +6,7 @@ import spark.template.velocity.VelocityTemplateEngine;
 import static spark.Spark.*;
 
 public class VowelPuzzle {
-  static String userInput = "";
+  public static String userInput = "";
   public static void main(String[] args) {
     staticFileLocation("/public");
     get("/", (request, response) -> {
@@ -46,7 +46,6 @@ public class VowelPuzzle {
   }
 
   public static String compareSentences(String userInput, String answerInput){
-
     String win = "You Win!";
     String tryAgain = "Try Again!";
     if (userInput.equals(answerInput)) {

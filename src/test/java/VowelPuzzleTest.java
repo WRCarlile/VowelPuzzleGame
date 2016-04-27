@@ -2,7 +2,11 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class VowelPuzzleTest {
-
+@Test
+  public void vowelRemover_instantiatesCorrectly_true() {
+    VowelPuzzle testVowelPuzzle = new VowelPuzzle();
+    assertEquals(true, testVowelPuzzle instanceof VowelPuzzle);
+  }
 @Test
 public void vowelRemover_replaceSentenceVowelsWithDash_dashForVowels() {
   VowelPuzzle testVowelPuzzle = new VowelPuzzle();

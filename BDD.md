@@ -1,6 +1,8 @@
 ##Behavior for junit tests##																		##Input##                                      ##Output##
+User inputs a sentence and 												    	"The sun will come out tomorrow"									       "True"
+a puzzle is generated.
 
-User inputs a sentence and 													"The sun will come out tomorrow"									"Th- s-n w-ll c-m- --t t-m-rr-w"
+User inputs a sentence and 												     	"The sun will come out tomorrow"									"Th- s-n w-ll c-m- --t" t-m-rr-w"
 a puzzle is generated where
 all vowels are removed from
 every word and replaced with
@@ -10,7 +12,7 @@ Second User recieves the "coded"												"The sun will come out tomorrow"				
 sentence and tries to input the
 correct answer.
 
-Second User recieves the "coded"													The son will come out tomorrow"													"Try Again"
+Second User recieves the "coded"												"The son will come out tomorrow"													"Try Again"
 sentence and enters a false answer.
 
 
@@ -20,7 +22,7 @@ sentence and enters a false answer.
 
 User navigates to home and sees text.														Page Loads																	Texts reads "Vowel Game"
 
-User inputs data into the form																		"Hello"																			puzzle reads:	"H-ll-"
+User inputs data into the form																		"Hello"																	puzzle reads:	"H-ll-"
 and page is navigated to the
 puzzle page.
 
